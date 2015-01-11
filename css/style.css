@@ -367,3 +367,95 @@ header ul{
 
 /* when showing the picture */
 .aboutme.ng-hide-remove      { animation:3.5s flipInX ease; }
+
+
+
+@media only screen and (max-width: 879px) {
+	.projects h1, h1.aboutmehead, h1{
+		font-size:435%;
+		text-align:center;
+		margin-top:40px;
+	}
+#projects,#aboutme,#contacts{
+	margin-left:12px;
+	width: 80%;
+margin: 0 auto;
+min-width:1px;
+}
+
+img{
+	padding-left:5%;
+	
+}
+
+a.navlink{
+visibility: hidden;
+font-size: 1px;
+background-color: #488b96;
+}
+
+
+h1.aboutmehead {
+	text-align:center;
+	margin-top:40px;
+}
+
+.left, .right{
+	width:100%;
+}
+
+.right{
+	margin-bottom:12%;
+}
+
+.findoutmore, .sayhello, .sayhelloagain{
+	margin-left:40%;
+}
+
+img.profile{
+	margin-left:5%;
+}
+
+.aboutmep {
+	margin-top: 64px;
+}
+
+a#intrositelink{
+background-color: #407970;
+background-color: #fdf6e3;
+background-color: #488b96;
+/* background-color: rgba(72, 139, 150, 0.4); */
+display: block;
+float: left;
+font-size: 31px;
+margin-left: 32%;
+color: #fbc490;
+color: #fdf6e3;
+/* color: #87C1A1; */
+line-height: 2.5em;
+margin-top: 25%;
+}
+
+.mobilemenu, .themobilemenu{
+display: block;
+height: 100%;
+width: 100%;
+min-height: 768px;
+margin-top: 40px;
+
+
+}
+
+.mobilemenu{
+	background-color: rgb(72, 139, 150);
+}
+
+.themobilemenu{
+	background-color: #96CDAF
+}
+
+/*.projects, .aboutme, .contact {
+	display:none;
+}*/
+
+}
