@@ -330,3 +330,7 @@ header ul{
 	font-size:26px;
 }
 
+.aboutme.ng-hide-add         { animation:3.5s lightSpeedOut ease; }
+
+/* when showing the picture */
+.aboutme.ng-hide-remove      { animation:3.5s flipInX ease; }

@@ -3,21 +3,42 @@ salterhebble = angular.module('salterhebble',['duScroll'])
 salterhebble.directive('scroller2', function($window) {
 	
     return function(scope, element, attrs) {
-    	console.log(this.pageYOffset)
+    	console.log(this)
+
+
+    	
         angular.element($window).bind("scroll", function() {
-        	  	console.log(this.pageYOffset)
-             if (this.pageYOffset >= 1794) {
-                 scope.aboutme = false;
-                 	scope.projects = false
+     	var h1 = document.querySelector("#header1");
+var h1top = h1.getBoundingClientRect().top;
+
+        	var h2 = document.querySelector("#header2down");
+var h2top = h2.getBoundingClientRect().top;
+
+        	var h3 = document.querySelector("#header3");
+var h3top = h3.getBoundingClientRect().top;
+console.log("JS Top: "+top);
+        	  
+
+console.log(h3top)
+if (h3top <1){
+	  	scope.aboutme = false
+			scope.projects = false
 			scope.contacts = true
+}
+            else  if (h2top >= 1) {
+           
+                 scope.aboutme = false;
+                 	scope.projects = true
+			scope.contacts = false
   
-             } else if (this.pageYOffset >= 972) {
-             	console.log("gi")
+             } else if (h2top < 1) {
+             
                  		scope.aboutme = true
 			scope.projects = false
 			scope.contacts = false
      
              } else{
+          
              	scope.aboutme = false
 			scope.projects = true
 			scope.contacts = false
