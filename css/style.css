@@ -60,7 +60,7 @@ background:rgba(75, 166, 11,0.4);
 background:rgba(108, 195, 147,0.4);
 	margin-bottom:-2.5em;
 
-	height: 50em;
+	height: 44.5em;
 }
 
 .headernotshowing{
@@ -329,4 +329,18 @@ header ul{
 	line-height:2.5em;
 	font-size:26px;
 }
+
+/*.aboutme.ng-hide  {
+  top: -40px;
+}
+
+.aboutme.ng-hide-remove {
+  display:block!important;
+}*/
+
+
+.aboutme.ng-hide-add         { animation:3.5s lightSpeedOut ease; }
+
+/* when showing the picture */
+.aboutme.ng-hide-remove      { animation:3.5s flipInX ease; }
 

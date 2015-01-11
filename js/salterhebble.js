@@ -1,4 +1,9 @@
-salterhebble = angular.module('salterhebble',['duScroll'])
+salterhebble = angular.module('salterhebble',['duScroll','ngAnimate'])
+
+  salterhebble.config(['$animateProvider', function ($animateProvider){
+  
+  $animateProvider.classNameFilter(/angular-animate/);
+}])
 
 salterhebble.directive('scroller2', function($window) {
 	
@@ -48,7 +53,13 @@ salterhebble.directive('scroller2', function($window) {
 //     };
 // })
 
+
+
+ 
+
 salterhebble.controller('siteController', function($scope,$document){
+	 
+
 	console.log("hello")
 	$scope.projects = true
 
