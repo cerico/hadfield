@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+  Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS: implied media="all" -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/0.6.4/angular-scroll.js"></script>
+  <script src="js/salterhebble.js"></script>
+
+  <body ng-app="salterhebble" ng-controller="siteController">
+
+<div scroller2>
+    <header id="header1" ng-show="projects">
+      <ul>
+        <a id="sitelink" ng-href="http://salterhebble.com">salterhebble</a>
+        <a class="navlink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">projects</a>
+        <a class="navlink" href="#header2down" du-smooth-scroll du-scrollspy ng-click="showAboutMe()">about me</a>
+         <a class="navlink" href="#header3" du-smooth-scroll du-scrollspy ng-click="showContacts()">contact</a>
+        <a class="navlink" href="http://scenicblog.salterhebble.com">blog</a>
+       
+        <a class="navlink" href="http://crabgrassfrontier.tumblr.com">photography</a>
+      </ul>
+
+
+    </header>
+    
+    <div class="container" ng-class="{aboutme: scroll > 50, projects: scroll <= 50}">
+
+
+      <div id="projects">
+        <div class="wide"><h1>Projects</h1></div>
+        <h2 class="title">scenic</h2>
+        
+        <div class="left">
+
+ <p class="project">Scenic is an app for finding and creating hikes. A non-signed-in user is able to view hikes and search for trails via a map. A signed-in user is able to add new trails to the system, and also add photos, primary location, and gpx data to existing trails. A signed in user also gets a profile showing trails they have added, completed or favourited. Anyone who uploads a trail become a trailowner, with admin right over the trail, and is able to delete photos, delete gpx if present, and change the name and primary location of the trail. Only the site admin is permitted to delete a trail</p>
+   
+          <br>
+          <p class="project">The app has a Rails backend with Postgresql, and makes extensive use of AngularJS, with client-side routing. Angular-google-maps also features prominently. Scenic is hosted on a Digital Ocean Ubuntu droplet, using Dokku. Scenic has a blog detailing its construction</p><br>
+          <ul class="toolslist">
+            <li><span class="project">Backend: Ruby on Rails</span></li>
+            <li><span class="project">Frontend: AngularJS</span></li>
+            <li><span class="project">Deployment: Dokku</span></li>
+          </ul>
+          
+        </div>
+
+        <div class="right">
+          <img src="http://salterhebble.com/blogpics/big.jpg"><br>
+
+
+          <a href="http://scenic.apps.salterhebble.com" class="findoutmore">visit site</a>
+          <!-- <a href="http://scenicblog.salterhebble.com" class="findoutmore">visit blog</a> -->
+     
+
+        </div>
+        <div class="lower">
+
+
+
+        </div>
+        <div id="header2down"></div>
+      </div>
+
+    </div>
+    
+     
+    <div id="header2up" class="container" ng-class="{'aboutme headernotshowing':!aboutme,'aboutme headershowing':aboutme}">
+        <header ng-show="aboutme">
+    
+      <ul>
+        <a id="sitelink" ng-href="http://salterhebble.com">salterhebble</a>
+        <a class="navlink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">projects</a>
+        <a class="navlink" href="#header2up" du-smooth-scroll du-scrollspy ng-click="showAboutMe()">about me</a>
+         <a class="navlink" href="#header3" du-smooth-scroll du-scrollspy ng-click="showContacts()">contact</a>
+        <a class="navlink" href="http://scenicblog.salterhebble.com">blog</a>
+       
+        <a class="navlink" href="http://crabgrassfrontier.tumblr.com">photography</a>
+      </ul>
+
+
+    </header>
+     <div id="aboutme" role="main" >
+     <div class="wide"><h1 class="aboutmehead">About</h1></div>
+     <h2 class="title"></h2>
+         <div class="left second">
+          <img class="profile" src="http://photos-d.ak.instagram.com/hphotos-ak-xpa1/1390148_231953363637803_1022416915_n.jpg"><br>
+
+
+      
+        </div>
+         <div class="right">
+<p class="aboutmep">Not all that long ago, they dismantled the Cloth Hall in Huddersfield and moved it piece by piece to an out of the way park, and replaced it with a state of the art new building. But usage figures of the new building went down, and no one visited the old building either. The old building lost its reason for being, and the new one didn't have any style, it wasn't a pleasant experience. Everybody lost. I think about development the same way, the beauty isn't just in the visuals, the appearance, its also in how it works, the combination of the two, living breathing works that people want to use. Thats where I'm coming from</p>
+          <br>
+          <p class="aboutmep"></p><br>
+          <ul class="toolslist">
+            <li><span class="aboutmep">Background: Cisco, Linux</span></li>
+            <li><span class="aboutmep">Skills: Rails, AngularJS, Javascript, HTML, CSS</span></li>
+            <li><span class="aboutmep">Non-tech: Medium Format Photography, Human Geography, The South Pennines</span></li>
+          </ul>
+
+        </div>
+        <div class="lower">
+
+
+
+        </div>
+          <div id="header3"></div>
+      </div>
+ 
+ </div>
+        <div id="header3" class="container" ng-class="{'contact headernotshowing':!contact,'contact headershowing':contact}">
+
+    <header ng-show="contacts" >
+      <ul>
+        <a id="sitelink" ng-href="http://salterhebble.com">salterhebble</a>
+        <a class="navlink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">projects</a>
+        <a class="navlink" href="#header2up" du-smooth-scroll du-scrollspy ng-click="showAboutMe()">about me</a>
+         <a class="navlink" href="#header3" du-smooth-scroll du-scrollspy ng-click="showContacts()">contact</a>
+        <a class="navlink" href="http://scenicblog.salterhebble.com">blog</a>
+       
+        <a class="navlink" href="http://crabgrassfrontier.tumblr.com">photography</a>
+      </ul>
+
+
+    </header>
+     <div id="contacts" role="main">
+     <div class="wide"><h1>Contact</h1></div>
+     <h2 class="title">garethrobertlee</h2>
+         <div class="left">
+
+
+          <p class="contactme">
+          <ul class="toolslist">
+            <li><span class="contactsme">location(s):</span></li>
+            <li><span class="contactsme">OL14, SK13, N16, 11102</span></li>
+       </ul>
+          <br>
+        
+          <ul class="toolslist horizontallink">
+            <li><span class="contactsme"><a href="http://www.twitter.com/crcvch"><i class="fa fa-twitter fa-2x"></i></a></span></li>
+            <li><span class="contactsme"><a href="https://www.linkedin.com/in/garethrobertlee"><i class="fa fa-linkedin fa-2x"></i></a></li>
+            <li><span class="contactsme"><a href="https://github.com/cerico"><i class="fa fa-github fa-2x"></i></a></li>
+                      
+                                                
+          </ul>
+        </div>
+         <div class="right">
+       <!--    <img src="http://photos-d.ak.instagram.com/hphotos-ak-xpa1/1390148_231953363637803_1022416915_n.jpg"><br> -->
+
+
+          <div class="findoutmore"><a href="http://scenicblog.salterhebble.com/contact/">say hello</a></div>
+   
+
+        </div>
+        <div class="lower">
+
+
+
+        </div>
+      </div>
+    </div>
+
+   
+    <footer>
+     Made in Hadfield, 2015
+   </footer>
+ </div> <!--! end of #container -->
+
+</div>
+
+
+</body></html>

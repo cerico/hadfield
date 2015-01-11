@@ -1,0 +1,332 @@
+  html, body, div, span, h1, h2, h3, h4, h5, h6, p,  em, img, ol, ul, li, form, label, footer, header, menu, nav, section, summary{
+  	margin:0;
+  	padding:0;
+  	border:0;
+  	font-size:100%;
+  	font:inherit;
+  	vertical-align:baseline;
+  	font-family: "ff-din-web-pro-1", "ff-din-web-pro-2", sans-serif;
+/* font-family: minion-pro,Georgia,Times new roman,serif; */
+line-height: 1.5em;
+/* font-family: brandon-grotesque,Helvetica neue,Arial,sans-serif; */
+/* font-size: 20px; */}
+
+
+ footer, header, menu, nav, section{display:block}
+
+ body{
+/*  	background-color:#fdf6e3;
+  	background-color:#488b96;
+  	
+  	background-color:#6BCCDD;*/
+  	/*background-color:#fbc490;*/
+  }
+
+.container{
+	/*background: rgba(251,196,144,0.4)*/
+
+	padding-bottom:16px;
+	
+}
+
+.projects{
+	background:rgba(243, 132, 27, 0.4);
+	margin-top:-2.5em;
+
+	
+}
+
+.aboutme{
+	/*background: rgba(251,196,144,0.4)*/
+	background:rgba(61, 171, 189, 0.4);
+	background-color:#fdf6e3;
+  	background-color:#488b96;
+  	background-color:rgba(72, 139, 150, 1);
+  	background-color:rgba(7, 99, 114, 0.4);
+    background-color:rgba(11, 50, 68, 0.42);
+  	/*background-color:#6BCCDD;*/
+  	margin-bottom:2.5em;
+  	
+  
+  	/*background-color:#fbc490;*/
+
+
+	/*margin-top:-2.5em;*/
+}
+
+.contact{
+	background:rgba(165, 216, 0,0.4);
+background:rgba(75, 166, 11,0.4);
+background:rgba(108, 195, 147,0.4);
+	margin-bottom:-2.5em;
+
+	height: 50em;
+}
+
+.headernotshowing{
+	margin-top:-2.5em;
+}
+
+.headershowing {
+		margin-top:0em
+}
+
+
+
+
+  body:after
+ {
+	background-image:url(http://salterhebble.com/homesite/mottled.png);
+	background-attachment: fixed;
+
+	opacity: 0.37;
+	
+	content: '';
+	 display: block;
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+z-index: -1;
+	 width: 100%;
+	 height: 100%
+}
+
+  #projects, #aboutme, #contacts {
+margin-left: 97px;
+margin-right: 97px;
+margin-top: 40px;
+margin-bottom: 40px;
+min-width: 32em;
+max-width: 74em;
+}
+a {
+	text-decoration:none;
+}
+
+ul {
+	list-style: none
+}
+
+h1 {
+	color:#fff;
+	color: #cb4b16;
+	color: #407970;
+	font-size: 700%;
+margin-top: 0;
+margin-bottom: 20px;
+line-height: 100%;
+border: none;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.projects h1{
+	color: #407970;
+}
+
+.aboutmep, .aboutme h1{
+	color:#fff;
+	text-align: left;
+margin-right: 5%;
+}
+
+h1.aboutmehead {
+	text-align:right;
+}
+
+.contactsme {
+
+
+}
+
+.fa{
+	color:pink;
+}
+
+p, span {
+	
+	font-size:20px;
+
+		font-family: brandon-grotesque,Helvetica neue,Arial,sans-serif;
+
+  	
+
+}
+
+p.project, span.project{
+
+  	color:#488b96;
+}
+
+p.aboutme, span.aboutme, h1.aboutme{
+
+  	color:#fff;
+}
+
+p.contactsme, span.contactsme, h1.contactsme, .fa{
+	color:#488b96;
+}
+
+.horizontallink li{
+	float:left;
+	padding:4px;
+}
+
+
+
+html *{font-family:"ff-din-web-pro-1", "ff-din-web-pro-2", sans-serif;font-family: "ff-din-web-pro-1", "ff-din-web-pro-2", sans-serif;
+ font-family: minion-pro,Georgia,Times new roman,serif; 
+line-height: 1.5em;
+ font-family: brandon-grotesque,Helvetica neue,Arial,sans-serif; 
+/* font-size: 20px; */}
+
+
+html h2#pagesubtitle, html h2:first-of-type, html.light h2#pagesubtitle, html.light h2:first-of-type {
+
+/*font-weight: lighter;*/
+font-size: 250%;
+text-transform: none;
+
+margin-top: 20px;
+margin-bottom: 40px;
+line-height: 100%;
+border: none;
+	color:#488b96;
+}
+
+html footer{
+	padding-left: 97px;
+line-height: 200%;
+padding-right: 1em;
+margin:0;
+background-color: #eee8d5;
+color: #93a1a1;
+}
+
+header{
+	background-color: #93a1a1;
+		background-color:#fdf6e3;
+  	background-color:#488b96;
+  	background-color:#AFC187;
+
+  	background-color:#6BCCDD;
+  	background-color:#fbc490;
+  	background-color:#87C1A1;
+  	background-color:  	rgba(135, 193, 161, 0.4);
+  	background-color:rgba(32, 169, 93, 1);
+  	background-color:rgba(108, 195, 147, 0.64);
+
+color: #586e75;
+color:#AFC187;
+line-height:200%;
+margin-bottom:-2.5em;
+}
+
+a#sitelink, .orange a#sitelink {
+background-color: #407970;
+background-color: #fdf6e3;
+background-color: #488b96;
+/*background-color: rgba(72, 139, 150, 0.4);*/
+display: block;
+float: left;
+width: 153px;
+padding-left: 10px;
+color: #fbc490;
+		color:#fdf6e3;
+  	color:#87C1A1;
+  	line-height:2.5em;
+
+}
+
+a.navlink{
+	color: #586e75;
+	font-weight: lighter;
+
+		color:#fdf6e3;
+  	color:#488b96;
+  		color:rgba(32, 169, 93, 1);
+
+
+}
+
+a:hover, .findoutmore a:hover{
+	 color:#fdf6e3;
+
+	}
+
+.findoutmore:hover{
+	background:#488b96;
+	color:#fbc490;
+}
+	header a {
+		margin-right: 10px;
+	}
+
+
+
+.left, .right{
+	width:50%;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:left;
+}
+
+
+img {
+width: 85%;
+padding-left: 20%;
+margin-right: 5%;
+margin-top: -3%;
+padding-top: 32px;
+margin-bottom:96px;
+
+}
+
+img.profile{
+	margin-left:0;
+	padding-left:0px;
+	margin-top:-7%
+}
+
+
+.toolslist {
+	
+}
+
+.lower{
+	clear:both;
+}
+
+.findoutmore{
+border: 2px solid #488b96;
+
+width: 84px;
+margin: 0 auto;
+margin-left: 56%;
+text-align: center;
+padding-top: 3%;
+padding-bottom: 3%;
+color: #488b96;
+padding-left:16px;
+padding-right:16px;
+ border-radius:6px;
+}
+
+
+
+
+.findoutmore a  {
+	color:#488b96;
+}
+
+header ul{
+	line-height:2.5em;
+	font-size:26px;
+}
+
