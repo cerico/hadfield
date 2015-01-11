@@ -259,6 +259,18 @@ a:hover, .findoutmore a:hover{
 	background:#488b96;
 	color:#fbc490;
 }
+
+.sayhello:hover{
+	background-color:#fff;
+	color:rgb(11, 50, 68);
+}
+
+.sayhelloagain:hover{
+	background-color:#488b96;
+	color:#eee8d5;
+	
+}
+
 	header a {
 		margin-right: 10px;
 	}
@@ -303,8 +315,8 @@ img.profile{
 	clear:both;
 }
 
-.findoutmore{
-border: 2px solid #488b96;
+.findoutmore, .sayhello, .sayhelloagain{
+
 
 width: 84px;
 margin: 0 auto;
@@ -312,13 +324,29 @@ margin-left: 56%;
 text-align: center;
 padding-top: 3%;
 padding-bottom: 3%;
-color: #488b96;
+
 padding-left:16px;
 padding-right:16px;
  border-radius:6px;
 }
 
+.sayhello{
+	 border:2px solid #fff;
+	 color: #fff;
+	 background-color:transparent;
+	 margin-left:32%;
+}
 
+.sayhelloagain{
+	border:2px solid #488b96;
+	color: #488b96;
+	background:transparent;
+}
+
+.findoutmore {
+	border: 2px solid #488b96;
+	color: #488b96;
+}
 
 
 .findoutmore a  {

@@ -21,7 +21,12 @@ var h2top = h2.getBoundingClientRect().top;
 
         	var h3 = document.querySelector("#header3");
 var h3top = h3.getBoundingClientRect().top;
-console.log("JS Top: "+top);
+var h3bottom = h3.getBoundingClientRect();
+var footer = document.querySelector("#footer");
+var footertop = footer.getBoundingClientRect().top;
+var footerbottom = footer.getBoundingClientRect().bottom;
+console.log("JS top: "+footertop);
+console.log("JS bottom: "+footerbottom);
         	  
 
 console.log(h3top)
