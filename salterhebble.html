@@ -26,7 +26,7 @@
 <div scroller2>
     <header id="header1" ng-show="projects">
       <ul>
-        <a id="sitelink" ng-href="http://salterhebble.com">salterhebble</a>
+        <a id="sitelink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">salterhebble</a>
         <a class="navlink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">projects</a>
         <a class="navlink" href="#header2down" du-smooth-scroll du-scrollspy ng-click="showAboutMe()">about me</a>
          <a class="navlink" href="#header3" du-smooth-scroll du-scrollspy ng-click="showContacts()">contact</a>
@@ -47,10 +47,9 @@
         
         <div class="left">
 
- <p class="project">Scenic is an app for finding and creating hikes. A non-signed-in user is able to view hikes and search for trails via a map. A signed-in user is able to add new trails to the system, and also add photos, primary location, and gpx data to existing trails. A signed in user also gets a profile showing trails they have added, completed or favourited. Anyone who uploads a trail become a trailowner, with admin right over the trail, and is able to delete photos, delete gpx if present, and change the name and primary location of the trail. Only the site admin is permitted to delete a trail</p>
+ <p class="project">Scenic is an app for finding and creating hikes. A non-signed-in user is able to view hikes and search for trails via a map. A signed-in user is able to add new trails to the system, and also add photos, primary location, and gpx data to existing trails. A signed in user also gets a profile showing trails they have added, completed or favourited. Anyone who uploads a trail become a trailowner, with admin right over the trail, and is able to delete photos, delete gpx if present, and change the name and primary location of the trail. Only the site admin is permitted to delete a trail</p><br>
    
-          <br>
-          <p class="project">The app has a Rails backend with Postgresql, and makes extensive use of AngularJS, with client-side routing. Angular-google-maps also features prominently. Scenic is hosted on a Digital Ocean Ubuntu droplet, using Dokku. Scenic has a blog detailing its construction</p><br>
+
           <ul class="toolslist">
             <li><span class="project">Backend: Ruby on Rails</span></li>
             <li><span class="project">Frontend: AngularJS</span></li>
@@ -83,7 +82,7 @@
         <header ng-show="aboutme" class="angular-animate">
     
       <ul>
-        <a id="sitelink" ng-href="http://salterhebble.com">salterhebble</a>
+        <a id="sitelink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">salterhebble</a>
         <a class="navlink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">projects</a>
         <a class="navlink" href="#header2up" du-smooth-scroll du-scrollspy ng-click="showAboutMe()">about me</a>
          <a class="navlink" href="#header3" du-smooth-scroll du-scrollspy ng-click="showContacts()">contact</a>
@@ -108,7 +107,7 @@
          <div class="right">
 <p class="aboutmep">Not all that long ago, they dismantled the Cloth Hall in Huddersfield and moved it piece by piece to an out of the way park, and replaced it with a state of the art new building. But usage figures of the new building went down, and no one visited the old building either. The old building lost its reason for being, and the new one didn't have any style, it wasn't a pleasant experience. Everybody lost. I think about development the same way, the beauty isn't just in the visuals, the appearance, its also in how it works, the combination of the two, living breathing works that people want to use.</p>
 
-<p class="aboutmep">I started out with Rails, and am currently concentrating mainly on AngularJS, but I'm interested in work right the way across the stack.</p>
+
 
           <br>
           <p class="aboutmep"></p><br>
@@ -132,7 +131,7 @@
 
     <header ng-show="contacts" >
       <ul>
-        <a id="sitelink" ng-href="http://salterhebble.com">salterhebble</a>
+        <a id="sitelink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">salterhebble</a>
         <a class="navlink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">projects</a>
         <a class="navlink" href="#header2up" du-smooth-scroll du-scrollspy ng-click="showAboutMe()">about me</a>
          <a class="navlink" href="#header3up" du-smooth-scroll du-scrollspy ng-click="showContacts()">contact</a>
@@ -151,15 +150,15 @@
 
           <p class="contactme">
           <ul class="toolslist">
-            <li><span class="contactsme">location(s):</span></li>
+            <li><span class="contactsme">locations></li>
             <li><span class="contactsme">OL14, SK13, N16, 11102</span></li>
        </ul>
           <br>
         
           <ul class="toolslist horizontallink">
             <li><span class="contactsme"><a href="http://www.twitter.com/crcvch"><i class="fa fa-twitter fa-2x"></i></a></span></li>
-            <li><span class="contactsme"><a href="https://www.linkedin.com/in/garethrobertlee"><i class="fa fa-linkedin fa-2x"></i></a></li>
-            <li><span class="contactsme"><a href="https://github.com/cerico"><i class="fa fa-github fa-2x"></i></a></li>
+            <li><span class="contactsme"><a href="https://www.linkedin.com/in/garethrobertlee"><i class="fa fa-linkedin fa-2x"></i></a></span></li>
+            <li><span class="contactsme"><a href="https://github.com/cerico"><i class="fa fa-github fa-2x"></i></a></span></li>
                       
                                                 
           </ul>
@@ -172,7 +171,7 @@
    
 
         </div>
-        <div class="lower">
+        <div class="lower  fillout">
 
 
 
