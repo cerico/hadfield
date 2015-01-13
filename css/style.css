@@ -60,7 +60,7 @@ background:rgba(75, 166, 11,0.4);
 background:rgba(108, 195, 147,0.4);
 	margin-bottom:-2.5em;
 
-	height: 44.5em;
+	height: 968px
 }
 
 .headernotshowing{
@@ -185,7 +185,7 @@ line-height: 1.5em;
 html h2#pagesubtitle, html h2:first-of-type, html.light h2#pagesubtitle, html.light h2:first-of-type {
 
 /*font-weight: lighter;*/
-font-size: 250%;
+font-size: 9vw;
 text-transform: none;
 
 margin-top: 20px;
@@ -221,7 +221,11 @@ color: #586e75;
 color:#AFC187;
 line-height:200%;
 margin-bottom:-2.5em;
+z-index: 9000;
 }
+
+
+
 
 a#sitelink, .orange a#sitelink {
 background-color: #407970;
@@ -250,10 +254,12 @@ a.navlink{
 
 }
 
-a:hover, .findoutmore a:hover{
+a:hover, .findoutmore a:hover, a.active {
 	 color:#fdf6e3;
 
 	}
+
+
 
 .findoutmore:hover{
 	background:#488b96;
@@ -368,11 +374,26 @@ header ul{
 /* when showing the picture */
 .aboutme.ng-hide-remove      { animation:3.5s flipInX ease; }
 
+.mobilemenu.inactive, .mobilebackground {
+opacity: 0;
+display:none;
+
+}
+
+a.btn-navbar.dark.hamActive {
+	display:none;
+}
 
 
-@media only screen and (max-width: 879px) {
+.mobilemenu, .mobilemenu .phonelinks, .mobilemenu .phonesplash {
+	display:none;
+}
+@media only screen and (max-width: 704px) {
+
+
+
 	.projects h1, h1.aboutmehead, h1{
-		font-size:435%;
+		font-size: 15vw;
 		text-align:center;
 		margin-top:40px;
 	}
@@ -406,10 +427,15 @@ h1.aboutmehead {
 
 .right{
 	margin-bottom:12%;
+	margin-top:8%;
 }
 
-.findoutmore, .sayhello, .sayhelloagain{
-	margin-left:40%;
+.findoutmore, .sayhello{
+	margin-left:33%;
+}
+
+.sayhelloagain{
+	margin-left:0;
 }
 
 img.profile{
@@ -436,7 +462,7 @@ line-height: 2.5em;
 margin-top: 25%;
 }
 
-.mobilemenu, .themobilemenu{
+/*.mobilemenu, .themobilemenu{
 display: block;
 height: 100%;
 width: 100%;
@@ -444,18 +470,128 @@ min-height: 768px;
 margin-top: 40px;
 
 
-}
+}*/
 
 .mobilemenu{
 	background-color: rgb(72, 139, 150);
+	position: fixed;
+z-index: 9;
+opacity: 1;
+display: inline-block;
+margin-top: 0px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+
+padding: 12px 0 0;
+background: url('ferrybridge.jpg');
+overflow-x: hidden;
+-ms-overflow-style: none;
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
+-o-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transition: opacity 0.2s linear;
+-moz-transition: opacity 0.2s linear;
+-o-transition: opacity 0.2s linear;
+transition: opacity 0.2s linear;
+}
+
+a.btn-navbar.dark.hamActive {
+height: 60px;
+z-index: 22;
+top: 0;
+margin-left: 4px;
+position: fixed;
+padding-top: 14px;
+left: 0;
+margin-top: -1;
+width: 100%;
+display:block;
+}
+
+span.icon-bar, span.home-icon-bar {
+display: block;
+width: 22px;
+margin-top: 3px;
+margin-left:8px;
+height: 4px;
+/*background-color: #488b96;;*/
+background-color:#fff;
+-webkit-border-radius: 1px;
+-moz-border-radius: 1px;
+border-radius: 1px;
 }
 
 .themobilemenu{
 	background-color: #96CDAF
 }
 
+a#sitelink, .orange a#sitelink {
+	font-size:0px;
+	height:55px;
+	width:40px;
+}
+
+header ul {
+height:55px;
+}
 /*.projects, .aboutme, .contact {
 	display:none;
 }*/
+
+.mobilemenu .phonelinks {
+
+text-align: center;
+display: block;
+background:transparent;
+/*background-color:rgba(79, 95, 112, 1);*/
+margin-top: -12px;
+height: 100%;
+padding-top:48px;
+
+}
+.mobilemenu .phonelinks a.primary{
+font-size: 5vw;
+margin-top: 25%;
+color: #E1E7E1;
+/* text-transform: uppercase; */
+letter-spacing: 3px;
+margin-left: -2px;
+margin-bottom: -7px;
+display: inline-block;
+}
+
+}
+
+.mobilemenu .phonesplash {
+	background-color: rgba(0,0,0,0.75);
+	display:block;
+	margin-top: -12px;
+height: 100%;
+text-align:center;
+}
+
+.mobilemenu .phonesplash .phonetext {
+bottom:4%;
+left: 3%;
+position: absolute;
+font-size: 11vw;
+color: white;
+padding-bottom:36px;
+
+}
+
+.transpennine{
+	
+font-size: 4vw;
+color: #488b96;
+margin-top: -9%;
+margin-left: 35%;
+}
 
 }

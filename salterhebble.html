@@ -22,12 +22,38 @@
 
 
   <body ng-app="salterhebble" ng-controller="siteController">
+ 
+   <div class="mobilemenu" ng-show="forPhone">
+  <div class="phonesplash" ng-show="phonesplash">
+    <div class="phonetext" ng-click="activateMobileMenu()">salterhebble
+      <div class="transpennine">made in the pennines</div>
+    </div>
+   
+ 
+     <nav class="phonelinks" ng-show="mobileMenu"> 
+          
+            <a class="primary" href="#header1" ng-click="showProjects()">projects, </a>  
+            
+       
+            <a class="primary" href="#header2up" ng-click="showAboutMe()">about me, </a> 
+         
+         
+             <a class="primary" href="#header3up" ng-click="showContacts()">contact</a> 
+           
+          
+      </nav>
+       </div>
+   </div>
 
-<div scroller2>
     <header id="header1" ng-show="projects">
+    <a class="btn-navbar dark hamActive" href="#" ng-click="activateMobileMenu()">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
       <ul>
         <a id="sitelink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">salterhebble</a>
-        <a class="navlink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">projects</a>
+        <a class="navlink active" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">projects</a>
         <a class="navlink" href="#header2down" du-smooth-scroll du-scrollspy ng-click="showAboutMe()">about me</a>
          <a class="navlink" href="#header3" du-smooth-scroll du-scrollspy ng-click="showContacts()">contact</a>
         <a class="navlink" href="http://scenicblog.salterhebble.com">blog</a>
@@ -37,7 +63,8 @@
 
 
     </header>
-    
+
+  <div scroller2>  
     <div class="container" ng-class="{aboutme: scroll > 50, projects: scroll <= 50}">
 
 
@@ -80,11 +107,15 @@
      
     <div id="header2up" class="container" ng-class="{'aboutme headernotshowing':!aboutme,'aboutme headershowing ':aboutme}">
         <header ng-show="aboutme" class="angular-animate">
-    
+        <a class="btn-navbar dark hamActive" href="#">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
       <ul>
         <a id="sitelink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">salterhebble</a>
         <a class="navlink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">projects</a>
-        <a class="navlink" href="#header2up" du-smooth-scroll du-scrollspy ng-click="showAboutMe()">about me</a>
+        <a class="navlink active" href="#header2up" du-smooth-scroll du-scrollspy ng-click="showAboutMe()">about me</a>
          <a class="navlink" href="#header3" du-smooth-scroll du-scrollspy ng-click="showContacts()">contact</a>
         <a class="navlink" href="http://scenicblog.salterhebble.com">blog</a>
        
@@ -130,11 +161,16 @@
         <div id="header3up" class="container" ng-class="{'contact headernotshowing':!contact,'contact headershowing':contact}">
 
     <header ng-show="contacts" >
+        <a class="btn-navbar dark hamActive" href="#">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
       <ul>
         <a id="sitelink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">salterhebble</a>
         <a class="navlink" href="#header1" du-smooth-scroll du-scrollspy ng-click="showProjects()">projects</a>
         <a class="navlink" href="#header2up" du-smooth-scroll du-scrollspy ng-click="showAboutMe()">about me</a>
-         <a class="navlink" href="#header3up" du-smooth-scroll du-scrollspy ng-click="showContacts()">contact</a>
+         <a class="navlink active" href="#header3up" du-smooth-scroll du-scrollspy ng-click="showContacts()">contact</a>
         <a class="navlink" href="http://scenicblog.salterhebble.com">blog</a>
        
         <a class="navlink" href="http://crabgrassfrontier.tumblr.com">photography</a>
