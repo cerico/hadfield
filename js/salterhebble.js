@@ -87,6 +87,7 @@ salterhebble.controller('siteController', function($scope,$document){
 
 console.log($scope.projects)
 	console.log("hello")
+	$scope.ferrybridge = true
 	$scope.forPhone = true
 	$scope.projects = true
 	$scope.mobileMenu = false
@@ -97,7 +98,7 @@ console.log($scope.projects)
 
 	$scope.showProjects = function(){
 		
-
+  $scope.ferrybridge = false
 		$scope.projects = true
 $scope.fromMain = true
 $scope.forPhone = false
@@ -105,6 +106,8 @@ $scope.forPhone = false
 
 	$scope.showAboutMe = function(){
 		console.log("hello2")
+        $scope.ferrybridge = false
+
 		$scope.aboutme = true
 		$scope.fromMain = true
 		$scope.forPhone = false
@@ -113,6 +116,7 @@ $scope.forPhone = false
 		$scope.contacts = true
 		$scope.forPhone = false
 		$scope.fromMain = true
+		  $scope.ferrybridge = false
 	}
 	$scope.activateMobileMenu = function(){
 		if ($scope.mobileMenu === false){
@@ -124,6 +128,7 @@ $scope.forPhone = false
 		}if ($scope.fromMain === true){
 $scope.mobileMenu = true
 $scope.fromMain = false
+$scope.ferrybridge = true
 }
 		// 		if ($scope.phonesplash=== true){
 		// 	$scope.phonesplash= false
