@@ -116,7 +116,7 @@ h1 {
 	color:#fff;
 	color: #cb4b16;
 	color: #407970;
-	font-size: 700%;
+	font-size: 8vw;
 margin-top: 0;
 margin-bottom: 20px;
 line-height: 100%;
@@ -190,7 +190,7 @@ line-height: 1.5em;
 html h2#pagesubtitle, html h2:first-of-type, html.light h2#pagesubtitle, html.light h2:first-of-type {
 
 /*font-weight: lighter;*/
-font-size: 9vw;
+font-size: 5vw;
 text-transform: none;
 
 margin-top: 20px;
@@ -198,6 +198,7 @@ margin-bottom: 40px;
 line-height: 100%;
 border: none;
 	color:#488b96;
+	font-size:5vw;
 }
 
 html footer{
@@ -602,6 +603,8 @@ margin-top: -9%;
 margin-left: 35%;
 }
 
+html h2#pagesubtitle, html h2:first-of-type, html.light h2#pagesubtitle, html.light h2:first-of-type {
+font-size:9vw;
 
 
 }
